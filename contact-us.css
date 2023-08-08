@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+   min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(contactus.png) no-repeat center center/cover;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(12, 11,9,0.6);
+    color: #fff;
+    padding: 10px 150px;
+}
+nav .logo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+nav .logo h1{
+    font-family: 'Dancing Script', cursive;
+    padding-left: 10px;
+}
+nav .logo img{
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+nav ul li a:hover{
+    color: #cda45e;
+}
+.cart{
+    padding: 5px 30px ;
+    margin-left: 30px;
+    border: 0;
+    outline: 0;
+    background-color: #cda45e;
+    color: #292929;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+    text-align: center;
+    
+}
+.cart:hover{
+    color: #cda45e;
+    background-color: transparent;
+    border: 2px solid #cda45e;
+}
+.cart-count{
+    position: absolute;
+    background-color: #cda45e;
+    color: #292929;
+    text-align: center;
+    top: 5px;
+    right: 130px;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    line-height: 25px;
+    border-radius: 50%;
+    font-weight:600 ;
+    z-index: 10;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.container form h1{
+    color: #fff; font-weight: 500;
+    margin-top: 20px; width: 500px;
+    text-align: center;
+    }
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px; outline: none;
+    border: none;
+    font-size: 15px; ;
+    margin-bottom: 10px;
+    background: none; 
+    border-bottom: 2px solid #fff;
+}
+.container form input::placeholder{
+    color: #ddd;
+}
+.container form #lastname,
+.container form #mobile{
+margin-left: 20px;
+}
+.container form h4{
+color: #fff;
+font-weight: 300;
+width: 600px;
+margin-top: 20px;
+}
+.container form textarea{
+background: none;
+border: none;
+border-bottom: 2px solid #fff;
+color: #fff;
+font-weight: 200;
+font-size: 15px;
+padding: 10px; outline: none;
+min-width: 600px;
+max-width: 600px;
+min-height: 80px;
+max-height: 80px;
+}
+textarea::-webkit-scrollbar{
+    width: 1em;
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgba(192,192,192,0.713);
+}
+.container form #button{
+border: none;
+background: #fff;
+border-radius: 5px; 
+margin-top: 20px;
+font-weight: 600;
+font-size: 20px; 
+color: #333;
+width: 100px;
+padding: 0;
+margin-right: 500px;
+margin-bottom: 30px;
+transition: 8.3s; 
+}
+
+.container form #button:hover {
+    opacity: 0.7;
+}

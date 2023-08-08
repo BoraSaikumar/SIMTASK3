@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+   min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(food1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(12, 11,9,0.6);
+    color: #fff;
+    padding: 10px 150px;
+}
+nav .logo{
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+nav .logo h1{
+    font-family: 'Dancing Script', cursive;
+    padding-left: 10px;
+}
+nav .logo img{
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+}
+nav ul{
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+nav ul li a:hover{
+    color: #cda45e;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: -50px;
+}
+.banner h2{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border:1px solid #cda45e;
+    padding: 20px;
+    font-size:30px;
+   
+}
+.banner h3{
+    color: #fff;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+.banner h2 span{
+    color: #cda45e;
+    
+}
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.special h1{
+    background-color: #cda45e;
+    padding: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    position: absolute;
+    left: 700px;
+    top: 430px;
+    color: #292929;
+}
+.special .special-box{
+    height: 220px;
+    width: 160px;
+    background-color: rgba(0, 0,0,0.6);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border: 2px solid #cda45e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: -150px;
+}
+.special .special-box img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border: 5px solid #cda45e;
+    border-radius: 50%;
+}
+.special .special-box h2{
+    color: #cda45e;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 10px;
+}
+.special .special-box h3{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 5px;
+}
